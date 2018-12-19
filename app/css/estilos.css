@@ -1,0 +1,244 @@
+/**********************************************************
+***
+****                     Estilos propios*****************
+***********************************************************/
+/*FUENTES*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,700,900|Roboto");
+/* colores */
+/* colores de contenido*/
+/*******************************************
+*               mixins                  ***
+******************************************/
+/*********************************************************
+****              Estilos del HEADER                  ****
+**********************************************************/
+header {
+  background-color: #f2f3f3;
+  padding: 3rem 0; }
+
+header h1 {
+  color: #2f4152;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 4rem; }
+
+header h3 {
+  color: #2f4152;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  margin-bottom: 2rem; }
+
+nav {
+  background-color: #2f4152;
+  border-radius: 10px; }
+
+.navbar {
+  padding: 0; }
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0; }
+
+.nav-item {
+  color: white;
+  font-size: 1.5rem; }
+
+i.fa.fa-bars {
+  font-size: 3rem; }
+
+.experience, .education {
+  background-color: #292b2c; }
+
+.datos {
+  padding: 0.3rem; }
+  .datos h4 {
+    background-color: #292B2C;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem; }
+  .datos ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0; }
+    .datos ul a {
+      color: #2f4152; }
+      .datos ul a:hover {
+        color: #2f41ff; }
+
+.skills h4 {
+  background-color: #292B2C;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1.3rem; }
+
+/********************************************
+*                                            *
+*         estract styles                     *
+*                                            *
+* *******************************************/
+@media only screen and (min-width: 768px) {
+  .resumen {
+    padding: 3rem 0; }
+    .resumen .resena p {
+      line-height: 2.5rem; } }
+
+.datos p {
+  font-size: 1.2rem; }
+
+.datos ul {
+  font-size: 2rem; }
+
+@media only screen and (min-width: 768px) {
+  .datos {
+    padding: 2rem 0; }
+    .datos p {
+      display: inline-block;
+      margin-left: 0.8rem;
+      margin-bottom: 1.8rem; }
+    .datos ul {
+      font-size: 3rem; } }
+
+/***********************************************
+*                                               *
+*      ESTILOS DE LOS PROGRESS BAR              *
+*                                               *
+*************************************************/
+div.chart {
+  position: relative;
+  margin: auto;
+  width: 220px;
+  height: 220px; }
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+span {
+  color: #555;
+  display: block;
+  line-height: 220px;
+  text-align: center;
+  width: 220px;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  margin-left: 5px; }
+
+/**
+* fin de los estilos de progress bar *
+**/
+.skilltype {
+  text-align: center; }
+  .skilltype h3 {
+    margin: 1rem 0 2.3rem; }
+
+/* estilos caja experince */
+.experience h2 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.experience h3 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.experience ul li {
+  list-style-type: disc; }
+  .experience ul li p {
+    color: #fff; }
+    .experience ul li p span {
+      color: #555;
+      display: block;
+      text-align: center;
+      width: 220px;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-top: 1rem;
+      margin-left: 0px;
+      line-height: 3rem; }
+
+/* estilos caja education*/
+.education h2 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.education h3 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.education ul li {
+  list-style-type: disc; }
+  .education ul li p {
+    color: #fff; }
+    .education ul li p span {
+      color: #555;
+      display: block;
+      text-align: center;
+      width: 220px;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-top: 1rem;
+      margin-left: 0px;
+      line-height: 3rem; }
+
+/* estilos del social foot*/
+.contact {
+  text-align: center;
+  margin-top: 1rem; }
+  .contact span {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    display: inline; }
+  .contact p {
+    font-size: 1.3rem; }
+
+.social-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0.3rem 0 3rem 0;
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 768px) {
+    .social-foot {
+      font-size: 2rem; } }
