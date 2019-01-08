@@ -1,0 +1,38 @@
+//styles for footer
+//
+footer{
+  background-color: $dark;
+  
+}
+.contact{
+
+   background-color: $dark;
+    margin: 0 auto;
+    line-height: 2.3rem;
+    padding: 2rem 3rem;
+    color: $white;
+
+  h4{
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  .fas, .far{
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    @include desktop{
+      display: inline;
+      margin-right: 0.5rem;
+    }
+  }
+
+  a{
+    color:$green;
+    text-decoration: none;
+  }
+
+}

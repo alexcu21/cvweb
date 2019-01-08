@@ -1,0 +1,239 @@
+/**********************************************************
+***                import files           *****************
+***********************************************************/
+/* base */
+/*fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,700,900|Roboto");
+html {
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-out;
+}
+
+/* fonts */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #00bc62;
+  border-color: #00bc62;
+}
+
+/* layouts */
+.desktop-only {
+  display: none;
+}
+
+/*******************************************
+*               mixins                  ***
+******************************************/
+/*modules*/
+.navbar {
+  background-color: #2980b9;
+}
+
+.navbar a.nav-link {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar a.nav-link:hover {
+  font-weight: bold;
+  background-color: white;
+  color: #2980b9;
+  transition: all 0.2s ease-out;
+}
+
+.navbar .navbar-text a {
+  color: white;
+  font-size: 2.1rem;
+  margin: auto 10px;
+}
+
+.navbar .navbar-text a:hover {
+  font-weight: bold;
+  transition: all 0.4s ease-out;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar .navbar-text {
+    display: inline-block;
+  }
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-toggler-icon {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.navbar .nav-item {
+  text-align: center;
+}
+
+.hero-wrapper {
+  background-color: #2980b9;
+  height: 50vh;
+}
+
+.hero-wrapper .hero {
+  margin-top: 10rem;
+  color: white;
+}
+
+.hero-wrapper .hero p {
+  font-size: 1.5rem;
+}
+
+.about {
+  text-align: center;
+  line-height: 2rem;
+  background-color: #e8e8e8;
+  padding: 2rem 0 2rem 0;
+}
+
+.about h2 {
+  color: #30424e;
+}
+
+.about .fas {
+  color: #00bc62;
+  font-size: 10rem;
+}
+
+.values {
+  text-align: center;
+  line-height: 2rem;
+  background-color: #e8e8e8;
+  padding: 2rem 0 2rem 0;
+}
+
+.values h2 {
+  color: #30424e;
+  margin-top: 2rem;
+}
+
+.values .far {
+  color: #00bc62;
+  font-size: 10rem;
+}
+
+.skills {
+  padding: 2rem 0;
+}
+
+.skills .skill {
+  margin: 1rem 0;
+  line-height: 2.3rem;
+}
+
+.skills h4 {
+  font-weight: bold;
+}
+
+.skills p {
+  font-size: 1.5rem;
+}
+
+.skills .fab, .skills .fas {
+  font-size: 8rem;
+}
+
+.services {
+  background-color: #e8e8e8;
+  padding: 2rem 0;
+}
+
+.services .service {
+  margin: 1rem 0;
+  line-height: 2.3rem;
+}
+
+.services h4 {
+  font-weight: bold;
+}
+
+.services p {
+  font-size: 1.5rem;
+}
+
+.services .fab, .services .fas {
+  font-size: 8rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .services {
+    height: 60vh;
+    align-items: center;
+  }
+}
+
+.services #services {
+  margin-top: 3rem;
+}
+
+.portfolio {
+  padding: 2rem 0 0 0;
+}
+
+.portfolio .card {
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: #30424e;
+}
+
+.contact {
+  background-color: #30424e;
+  margin: 0 auto;
+  line-height: 2.3rem;
+  padding: 2rem 3rem;
+  color: white;
+}
+
+.contact h4 {
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 1.5rem;
+}
+
+.contact .fas, .contact .far {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact .fas, .contact .far {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+}
+
+.contact a {
+  color: #00bc62;
+  text-decoration: none;
+}
+
+/*states*/

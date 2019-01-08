@@ -1,0 +1,31 @@
+//styles for service
+
+.services{
+  background-color: $gray;
+  .service{
+    margin: 1rem 0;
+    line-height: 2.3rem;
+  }
+
+  padding: 2rem 0;
+  h4{
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  .fab, .fas{
+    font-size: 8rem;
+  }
+
+  @include desktop{
+    height: 60vh;
+
+    align-items: center;
+  }
+  #services{
+    margin-top: 3rem;
+  }
+}

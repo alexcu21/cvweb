@@ -1,0 +1,33 @@
+/*global require */
+/*jslint node:true */
+'use strict';
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('sass', gulp.series( function() {
+  gulp.src('scss/estilos.scss')
+    .pipe(autoprefixer()
+    )
+    .pipe(sass({
+      includePaths: ['scss']
+    }))
+    .pipe(gulp.dest('app/css'));
+}));
+
+// watch Sass files for changes, run the Sass preprocessor with the 'sass' task and reload
+gulp.task('serve', gulp.series('sass', function(done) {
+  browserSync.init(["app/css/*.css", "app/js/*.js", "app/*.html"], {
+    server: {
+      baseDir: 'app'
+    }
+  });
+done();
+}));
+
+gulp.task('watch', gulp.series('sass', 'serve', function() {
+  gulp.watch(["scss/*.scss"], ['sass']);
+}));

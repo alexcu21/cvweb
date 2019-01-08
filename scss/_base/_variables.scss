@@ -1,0 +1,19 @@
+/* fonts */
+$main-font:'Open Sans', sans-serif;
+
+//colors
+
+$dark:rgb(48, 66, 78);//#30424e
+$white: rgb(255, 255, 255);//#ffffff
+$blue:rgb(41, 128, 185); //#2980b9
+$green: rgb(0, 188, 98);//#00bc62
+$gray:#e8e8e8;
+
+// colors variables
+
+$fontColor:$dark;
+$backgroundColor:$blue;
+
+//mixins variables
+$tablet: 768px;
+$desktop: 1024px;

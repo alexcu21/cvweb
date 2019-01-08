@@ -1,0 +1,16 @@
+//styles for hero
+
+.hero-wrapper{
+  background-color: $backgroundColor;
+  height: 50vh;
+  
+
+  .hero{
+    margin-top: 10rem;
+    color: $white;
+
+    p{
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// styles for ABOUT
+
+.about{
+
+  text-align: center;
+  line-height: 2rem;
+  background-color: $gray;
+  padding: 2rem 0 2rem 0;
+
+  h2{
+    color: $dark;
+  }
+
+  .fas{
+    color: $green;
+    font-size: 10rem;
+  }
+}
+
+.values{
+  text-align: center;
+  line-height: 2rem;
+  background-color: $gray;
+  padding: 2rem 0 2rem 0;
+
+  h2{
+    color: $dark;
+    margin-top: 2rem;
+  }
+
+  .far{
+    color: $green;
+    font-size: 10rem;
+  }
+
+
+}
