@@ -41,8 +41,14 @@ h2 {
 *               mixins                  ***
 ******************************************/
 /*modules*/
+.wrapper-nav {
+  background-color: #2980b9;
+  width: 100%;
+}
+
 .navbar {
   background-color: #2980b9;
+  width: 100%;
 }
 
 .navbar a.nav-link {
