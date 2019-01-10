@@ -3,7 +3,10 @@
 .hero-wrapper{
   background-color: $backgroundColor;
   height: 50vh;
-  
+  @include desktop{
+    padding: 8rem 0;
+    height: 70vh;
+  }
 
   .hero{
     margin-top: 10rem;
@@ -11,6 +14,9 @@
 
     p{
       font-size: 1.5rem;
+    }
+    @include desktop{
+      margin-top: 15rem;
     }
   }
 }

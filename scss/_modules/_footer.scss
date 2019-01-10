@@ -2,10 +2,23 @@
 //
 footer{
   background-color: $dark;
-  
+  @include desktop{
+    .mobil-only{
+      display: none;
+    }
+  }
+  .social{
+    font-size: 3rem;
+    a:hover{
+      color: $white;
+    }
+  }
+
 }
 .contact{
-
+  @include desktop{
+    padding: 5rem 0;
+  }
    background-color: $dark;
     margin: 0 auto;
     line-height: 2.3rem;
@@ -27,7 +40,7 @@ footer{
     @include desktop{
       display: inline;
       margin-right: 0.5rem;
-    }
+          }
   }
 
   a{

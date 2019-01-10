@@ -2,10 +2,12 @@
 
 .portfolio{
   padding: 2rem 0 0 0;
-
+  @include desktop{
+    padding: 5rem 0;
+  }
   .card{
     margin: 1rem 0;
 
-    
+
   }
 }
